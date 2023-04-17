@@ -1,0 +1,41 @@
+.post {
+  display: inline-block;
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+
+  &+.post {
+    margin-top: 3rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    color: var(--heading);
+    letter-spacing: -0.5px;
+    margin-bottom: 0.5rem;
+    transition: color 0.2s;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--body);
+    margin-bottom: 1.5rem;
+  }
+}
+
+.pagination {
+  display: block;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: var(--highlight);
+  transition: filter 0.2s;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
